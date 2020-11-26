@@ -9,11 +9,11 @@ describe('intro/sum', () => {
 
     [
       ['1', []],
-      ['1', '1']
+      ['1', '1'],
     ].forEach(([a, b]) => {
       it('бросает TypeError, если аргументы - не числа', () => {
         expect(() => sum(a, b)).throw(TypeError);
       });
-    })
+    });
   });
 });
